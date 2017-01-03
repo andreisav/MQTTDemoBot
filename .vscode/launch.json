@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${workspaceRoot}/app.js",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": "3000",
+                "MESSENGER_APP_SECRET": "5ab0c72dd79aaa5a6c00f1a9360e4d85",
+                "MESSENGER_VALIDATION_TOKEN": "gm7Gnv3Ndujmzc",
+                "MESSENGER_PAGE_ACCESS_TOKEN": "EAADaScVtoX8BABZBcDVInbAj7s4xSSQKo6p0OwDVfnbR8SKsnNoVIBnDOvqqMzAF9BeMjzzHb06yZAw8e6O0zcQP4bQoK3v1zzZCON7kn0KYXaTJmZCoMzGDOwIiNgLASKxYYjgjPUcwZAiEjGgVkfZBzwi7PcNZCqArI13gcZCppwZDZD",
+                "SERVER_URL":  "https://0ce81a9e.ngrok.io"
+            }
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "port": 5858
+        }
+    ]
+}
