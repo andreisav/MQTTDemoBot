@@ -138,7 +138,7 @@ app.post('/devices', function (req, res) {
     var data = req.body;
     console.log("Device says: %s", JSON.stringify(data));
 
-    if (data == undefined || data.did == undefined || data.msg == undefined) {
+    if (data == undefined || data.did == undefined || data.message == undefined) {
       res.sendStatus(400);
       return;
     }
@@ -148,7 +148,7 @@ app.post('/devices', function (req, res) {
     var did =  data.did;
 
     var senderID = 1301331826591392 // hard coded to Andrei
-    sendTextMessage(senderID, data.msg);
+    sendTextMessage(senderID, data.message.text);
     res.sendStatus(200);
   }
   catch(err) {
